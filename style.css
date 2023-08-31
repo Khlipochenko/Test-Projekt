@@ -1,0 +1,307 @@
+body{
+    margin: 0%;
+}
+/* Formatirung "Header" */
+header {
+    background-color: #CAF0F8;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+header h3{
+    color: #0077B6;
+}
+header img {
+    width: 80px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+/* Ende der Formatirung "Header" */
+
+
+main {
+    padding: 20px;
+
+}
+
+main h1 {
+    text-align: center;
+    color: #0077B6;
+}
+
+/* Formatirung der Navigation auf der Hauptseite  */
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.links>ul {
+    width: 200px;
+    position: sticky;
+    top: 30px;
+    align-self: start;
+}
+
+.links>ul li {
+    list-style: none;
+    padding: 16px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #CAF0F8;
+    margin-top: 1px;
+}
+
+
+.links>ul>li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #023E8A;
+    text-transform: uppercase;
+}
+
+
+.links>ul>li:hover {
+    background-color: #90E0EF;
+
+}
+
+
+.links>ul>li>img {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+
+}
+
+/* Ende der Formatirung  der Navigation auf der Hauptseite  */
+.oben {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    color: #023E8A;
+    font-size: 20px;
+    flex-wrap: wrap;
+
+}
+
+.oben div {
+    width: 650px;
+}
+
+.mitte {
+
+    width: 800px;
+    margin: 0 auto;
+}
+
+.mitte section {
+
+    font-size: 20px;
+    color: #023E8A;
+}
+
+.mitte a {
+
+    color: #0077B6;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.mitte a:hover {
+
+    text-decoration: underline;
+
+}
+
+/* Formatirung "Footer" */
+footer {
+
+    background-color: #CAF0F8;
+    padding: 8px;
+    text-align: right;
+    padding-right: 20px;
+
+}
+
+footer img {
+    padding-left: 30px;
+
+}
+
+/* Animation für Hauptseite */
+.animation {
+    width: 600px;
+    padding-top: 20px;
+
+    animation: myAnim 1s ease 0s 1 normal forwards;
+
+}
+
+@keyframes myAnim {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animation2 {
+    width: 300px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+
+}
+
+.animation2:hover {
+    animation: myAnim2 1s ease 0s 1 normal forwards;
+
+
+}
+
+@keyframes myAnim2 {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        transform: scale(1) translateY(0);
+    }
+
+    100% {
+        box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35);
+        transform: scale(1.1) translateY(12px);
+    }
+}
+
+/* Formatirung unterseite */
+
+.unterseite>header>img {
+    width: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 50%;
+}
+
+
+.unterseite>header>div{
+    display: flex;
+    margin-right: 25px;
+}
+.unterseite header button{
+   background-color:#CAF0F8;
+    padding: 5px;   
+    border: none;
+}
+
+
+.unterseite header a {
+    font-family: 'Tilt Warp', cursive;
+    color: #0077B6;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+   padding: 2px;
+}
+
+
+
+
+.organe {
+  position: relative;
+  display: inline-block;
+}
+
+
+.kontenkOrgane {
+  display: none;
+  position: absolute;
+  background-color: #CAF0F8;
+ padding: 5px;
+}
+
+
+.unterseite header a:hover {
+   background-color: #90E0EF;}
+
+.organe:hover .kontenkOrgane {
+    display: block;}
+
+
+
+
+.kontakts {
+  position: relative;
+  display: inline-block;
+}
+
+
+.kontenkKontakts {
+  display: none;
+  position: absolute;
+  background-color: #CAF0F8;
+
+  padding: 5px;
+}
+
+
+
+
+
+.kontenkKontakts a:hover {
+    background-color: #90E0EF;}
+
+
+.kontakts:hover .kontenkKontakts {
+    display: block;}
+
+
+.kontakts:hover .klickKontakts{
+    background-color:  #90E0EF;}
+
+
+
+
+
+
+
+.unterseite section {
+    display: flex;
+    justify-content: center; 
+    gap: 40px;
+    color: #023E8A;
+    font-size: 20px;
+   margin-left: 60px;
+   margin-right: 60px;
+  
+  
+
+}
+
+.unterseite main img {
+    width: 400px;
+    border-radius: 40px;
+}
+
+#bild {
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 30px;
+    transition: all 1s;
+
+}
+
+#bild:hover {
+    transform: scale(1.1);
+}
+
+.unterseite main {
+    margin-top: 90px;
+
+}
+
+.unterseite main a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #023E8A;
+}
